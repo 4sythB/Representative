@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		68BABCCE1CD9ACA4001AC1FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BABCCD1CD9ACA4001AC1FB /* AppDelegate.swift */; };
-		68BABCD01CD9ACA4001AC1FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BABCCF1CD9ACA4001AC1FB /* ViewController.swift */; };
 		68BABCD31CD9ACA4001AC1FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BABCD11CD9ACA4001AC1FB /* Main.storyboard */; };
 		68BABCD51CD9ACA4001AC1FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BABCD41CD9ACA4001AC1FB /* Assets.xcassets */; };
 		68BABCD81CD9ACA4001AC1FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BABCD61CD9ACA4001AC1FB /* LaunchScreen.storyboard */; };
@@ -18,6 +17,9 @@
 		A25011581D342CA500C4695E /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011571D342CA500C4695E /* Representative.swift */; };
 		A250115A1D342F7E00C4695E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011591D342F7E00C4695E /* NetworkController.swift */; };
 		A250115F1D34305300C4695E /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250115E1D34305300C4695E /* RepresentativeController.swift */; };
+		A25011611D343A9D00C4695E /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011601D343A9D00C4695E /* StateListTableViewController.swift */; };
+		A25011631D343C4500C4695E /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011621D343C4500C4695E /* StateDetailTableViewController.swift */; };
+		A25011651D343E8600C4695E /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011641D343E8600C4695E /* DetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 /* Begin PBXFileReference section */
 		68BABCCA1CD9ACA4001AC1FB /* Representative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Representative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BABCCD1CD9ACA4001AC1FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		68BABCCF1CD9ACA4001AC1FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68BABCD21CD9ACA4001AC1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68BABCD41CD9ACA4001AC1FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68BABCD71CD9ACA4001AC1FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		A25011571D342CA500C4695E /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
 		A25011591D342F7E00C4695E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		A250115E1D34305300C4695E /* RepresentativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		A25011601D343A9D00C4695E /* StateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		A25011621D343C4500C4695E /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
+		A25011641D343E8600C4695E /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				68BABCCD1CD9ACA4001AC1FB /* AppDelegate.swift */,
+				68BABCD11CD9ACA4001AC1FB /* Main.storyboard */,
 				A250115C1D34303000C4695E /* Model */,
 				A250115B1D34302300C4695E /* Model Controller */,
 				A250115D1D34303800C4695E /* View Controller */,
-				68BABCD11CD9ACA4001AC1FB /* Main.storyboard */,
 				68BABCD41CD9ACA4001AC1FB /* Assets.xcassets */,
 				68BABCD61CD9ACA4001AC1FB /* LaunchScreen.storyboard */,
 				68BABCD91CD9ACA4001AC1FB /* Info.plist */,
@@ -138,9 +142,9 @@
 		A250115B1D34302300C4695E /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				68BABCFB1CD9ACCC001AC1FB /* StateController.swift */,
-				A25011591D342F7E00C4695E /* NetworkController.swift */,
 				A250115E1D34305300C4695E /* RepresentativeController.swift */,
+				A25011591D342F7E00C4695E /* NetworkController.swift */,
+				68BABCFB1CD9ACCC001AC1FB /* StateController.swift */,
 			);
 			name = "Model Controller";
 			sourceTree = "<group>";
@@ -156,7 +160,9 @@
 		A250115D1D34303800C4695E /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				68BABCCF1CD9ACA4001AC1FB /* ViewController.swift */,
+				A25011601D343A9D00C4695E /* StateListTableViewController.swift */,
+				A25011621D343C4500C4695E /* StateDetailTableViewController.swift */,
+				A25011641D343E8600C4695E /* DetailTableViewCell.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -294,9 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A250115A1D342F7E00C4695E /* NetworkController.swift in Sources */,
+				A25011611D343A9D00C4695E /* StateListTableViewController.swift in Sources */,
+				A25011651D343E8600C4695E /* DetailTableViewCell.swift in Sources */,
 				A25011581D342CA500C4695E /* Representative.swift in Sources */,
-				68BABCD01CD9ACA4001AC1FB /* ViewController.swift in Sources */,
 				68BABCFC1CD9ACCC001AC1FB /* StateController.swift in Sources */,
+				A25011631D343C4500C4695E /* StateDetailTableViewController.swift in Sources */,
 				A250115F1D34305300C4695E /* RepresentativeController.swift in Sources */,
 				68BABCCE1CD9ACA4001AC1FB /* AppDelegate.swift in Sources */,
 			);

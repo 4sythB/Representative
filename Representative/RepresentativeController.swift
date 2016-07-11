@@ -15,7 +15,7 @@ class RepresentativeController {
     static func searchRepsByState(state: String, completion: ((representative: [Representative]) -> Void)) {
         guard let url = baseURL else { fatalError("URL optional is nil") }
         
-        let urlParameters = ["state" : "\(state)"]
+        let urlParameters = ["state" : "\(state)", "output" : "json"]
         NetworkController.performRequestForURL(url, httpMethod: .Get, urlParameters: urlParameters) { (data, error) in
             if let data = data,
                 responseDataString = NSString(data: data, encoding: NSUTF8StringEncoding) {
@@ -26,8 +26,11 @@ class RepresentativeController {
                         completion(representative: [])
                         return
                 }
-                let representatives = representativesArray.flatMap { Representative(dictionary: $0) }
-                completion(representative: representatives)
+                dispatch_async(dispatch_get_main_queue(), {
+                    let representatives = representativesArray.flatMap { Representative(dictionary: $0) }
+                    completion(representative: representatives)
+                })
+                
                 
             } else {
                 print("No data returned from network request")
