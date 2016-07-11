@@ -15,6 +15,9 @@
 		68BABCE31CD9ACA4001AC1FB /* RepresentativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BABCE21CD9ACA4001AC1FB /* RepresentativeTests.swift */; };
 		68BABCEE1CD9ACA4001AC1FB /* RepresentativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BABCED1CD9ACA4001AC1FB /* RepresentativeUITests.swift */; };
 		68BABCFC1CD9ACCC001AC1FB /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BABCFB1CD9ACCC001AC1FB /* StateController.swift */; };
+		A25011581D342CA500C4695E /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011571D342CA500C4695E /* Representative.swift */; };
+		A250115A1D342F7E00C4695E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011591D342F7E00C4695E /* NetworkController.swift */; };
+		A250115F1D34305300C4695E /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250115E1D34305300C4695E /* RepresentativeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		68BABCED1CD9ACA4001AC1FB /* RepresentativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeUITests.swift; sourceTree = "<group>"; };
 		68BABCEF1CD9ACA4001AC1FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68BABCFB1CD9ACCC001AC1FB /* StateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		A25011571D342CA500C4695E /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		A25011591D342F7E00C4695E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		A250115E1D34305300C4695E /* RepresentativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				68BABCCD1CD9ACA4001AC1FB /* AppDelegate.swift */,
-				68BABCFB1CD9ACCC001AC1FB /* StateController.swift */,
-				68BABCCF1CD9ACA4001AC1FB /* ViewController.swift */,
+				A250115C1D34303000C4695E /* Model */,
+				A250115B1D34302300C4695E /* Model Controller */,
+				A250115D1D34303800C4695E /* View Controller */,
 				68BABCD11CD9ACA4001AC1FB /* Main.storyboard */,
 				68BABCD41CD9ACA4001AC1FB /* Assets.xcassets */,
 				68BABCD61CD9ACA4001AC1FB /* LaunchScreen.storyboard */,
@@ -126,6 +133,32 @@
 				68BABCEF1CD9ACA4001AC1FB /* Info.plist */,
 			);
 			path = RepresentativeUITests;
+			sourceTree = "<group>";
+		};
+		A250115B1D34302300C4695E /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68BABCFB1CD9ACCC001AC1FB /* StateController.swift */,
+				A25011591D342F7E00C4695E /* NetworkController.swift */,
+				A250115E1D34305300C4695E /* RepresentativeController.swift */,
+			);
+			name = "Model Controller";
+			sourceTree = "<group>";
+		};
+		A250115C1D34303000C4695E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A25011571D342CA500C4695E /* Representative.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A250115D1D34303800C4695E /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68BABCCF1CD9ACA4001AC1FB /* ViewController.swift */,
+			);
+			name = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A250115A1D342F7E00C4695E /* NetworkController.swift in Sources */,
+				A25011581D342CA500C4695E /* Representative.swift in Sources */,
 				68BABCD01CD9ACA4001AC1FB /* ViewController.swift in Sources */,
 				68BABCFC1CD9ACCC001AC1FB /* StateController.swift in Sources */,
+				A250115F1D34305300C4695E /* RepresentativeController.swift in Sources */,
 				68BABCCE1CD9ACA4001AC1FB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +527,7 @@
 				68BABCF41CD9ACA4001AC1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68BABCF51CD9ACA4001AC1FB /* Build configuration list for PBXNativeTarget "RepresentativeTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +536,7 @@
 				68BABCF71CD9ACA4001AC1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68BABCF81CD9ACA4001AC1FB /* Build configuration list for PBXNativeTarget "RepresentativeUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +545,7 @@
 				68BABCFA1CD9ACA4001AC1FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
