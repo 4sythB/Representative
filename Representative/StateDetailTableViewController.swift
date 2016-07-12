@@ -16,10 +16,12 @@ class StateDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let state = state else { return }
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         RepresentativeController.searchRepsByState(state, completion: { (representatives) in
             self.representatives = representatives
             dispatch_async(dispatch_get_main_queue(), {
                 self.tableView.reloadData()
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             })
         })
     }
