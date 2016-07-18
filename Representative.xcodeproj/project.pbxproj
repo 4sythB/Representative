@@ -18,6 +18,8 @@
 		A2BB50711D3D694D006A212A /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB50701D3D694D006A212A /* NetworkController.swift */; };
 		A2BB50731D3D69B3006A212A /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB50721D3D69B3006A212A /* RepresentativeController.swift */; };
 		A2BB50791D3D7074006A212A /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB50781D3D7074006A212A /* StateListTableViewController.swift */; };
+		A2BB507B1D3D72BB006A212A /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB507A1D3D72BB006A212A /* StateDetailTableViewController.swift */; };
+		A2BB507D1D3D7400006A212A /* RepresentativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BB507C1D3D7400006A212A /* RepresentativeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A2BB50701D3D694D006A212A /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		A2BB50721D3D69B3006A212A /* RepresentativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
 		A2BB50781D3D7074006A212A /* StateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		A2BB507A1D3D72BB006A212A /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
+		A2BB507C1D3D7400006A212A /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				A2BB50781D3D7074006A212A /* StateListTableViewController.swift */,
+				A2BB507A1D3D72BB006A212A /* StateDetailTableViewController.swift */,
+				A2BB507C1D3D7400006A212A /* RepresentativeTableViewCell.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -301,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BB507D1D3D7400006A212A /* RepresentativeTableViewCell.swift in Sources */,
 				A2BB50711D3D694D006A212A /* NetworkController.swift in Sources */,
 				A2BB50791D3D7074006A212A /* StateListTableViewController.swift in Sources */,
 				A2BB506F1D3D6780006A212A /* Representative.swift in Sources */,
 				68BABCFC1CD9ACCC001AC1FB /* StateController.swift in Sources */,
+				A2BB507B1D3D72BB006A212A /* StateDetailTableViewController.swift in Sources */,
 				A2BB50731D3D69B3006A212A /* RepresentativeController.swift in Sources */,
 				68BABCCE1CD9ACA4001AC1FB /* AppDelegate.swift in Sources */,
 			);
