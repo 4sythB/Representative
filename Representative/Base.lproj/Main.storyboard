@@ -37,7 +37,7 @@
             </objects>
             <point key="canvasLocation" x="2473" y="111"/>
         </scene>
-        <!--State Detail Table View Controller-->
+        <!--Representatives-->
         <scene sceneID="QHH-ZY-7zw">
             <objects>
                 <tableViewController id="ANy-3y-NBU" customClass="StateDetailTableViewController" customModule="Representative" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,6 +113,9 @@
                             <outlet property="delegate" destination="ANy-3y-NBU" id="1CO-G3-hQS"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Representatives" id="kB1-E4-r4I"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7UK-my-Bf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
