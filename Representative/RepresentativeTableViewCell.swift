@@ -35,8 +35,3 @@ class RepresentativeTableViewCell: UITableViewCell {
         phoneLabel.text = "Phone: \(representative.phone)"
     }
 }
-
-protocol RepresentativeTableViewCellDelegate: class {
-    
-    func updateWithRepresentative(representative: Representative)
-}
