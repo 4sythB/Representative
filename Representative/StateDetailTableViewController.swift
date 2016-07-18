@@ -11,7 +11,7 @@ import UIKit
 class StateDetailTableViewController: UITableViewController {
     
     var representatives: [Representative] = []
-    let state: String? = ""
+    var state: String? = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +20,9 @@ class StateDetailTableViewController: UITableViewController {
         
         RepresentativeController.searchRepsByState(state) { (representatives) in
             guard let representatives = representatives else { return }
+            self.representatives = representatives
             dispatch_async(dispatch_get_main_queue()) {
-                self.representatives = representatives
+                self.tableView.reloadData()
             }
         }
     }
