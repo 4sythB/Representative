@@ -18,11 +18,14 @@ class StateDetailTableViewController: UITableViewController {
         
         guard let state = state else { return }
         
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
         RepresentativeController.searchRepsByState(state) { (representatives) in
             guard let representatives = representatives else { return }
             self.representatives = representatives
             dispatch_async(dispatch_get_main_queue()) {
                 self.tableView.reloadData()
+                UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             }
         }
     }
